@@ -13,9 +13,12 @@
 		A2590EBB26A1A022009B54AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2590EB926A1A022009B54AA /* Main.storyboard */; };
 		A2590EBD26A1A024009B54AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2590EBC26A1A024009B54AA /* Assets.xcassets */; };
 		A2590EC026A1A024009B54AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2590EBE26A1A024009B54AA /* LaunchScreen.storyboard */; };
+		BCAB4641638FD52705309C4C /* Pods_AsgatechNewsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD46B40FF45050D883FA0C76 /* Pods_AsgatechNewsTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38B7C035B36B376B27BACECD /* Pods-AsgatechNewsTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgatechNewsTask.debug.xcconfig"; path = "Target Support Files/Pods-AsgatechNewsTask/Pods-AsgatechNewsTask.debug.xcconfig"; sourceTree = "<group>"; };
+		9E824A3EA46888C0C91D613D /* Pods-AsgatechNewsTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsgatechNewsTask.release.xcconfig"; path = "Target Support Files/Pods-AsgatechNewsTask/Pods-AsgatechNewsTask.release.xcconfig"; sourceTree = "<group>"; };
 		A2590EB026A1A022009B54AA /* AsgatechNewsTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsgatechNewsTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2590EB326A1A022009B54AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2590EB526A1A022009B54AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		A2590EBC26A1A024009B54AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2590EBF26A1A024009B54AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2590EC126A1A024009B54AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD46B40FF45050D883FA0C76 /* Pods_AsgatechNewsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsgatechNewsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAB4641638FD52705309C4C /* Pods_AsgatechNewsTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A9430C7C30A9F0C0ADB4633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD46B40FF45050D883FA0C76 /* Pods_AsgatechNewsTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A2590EA726A1A022009B54AA = {
 			isa = PBXGroup;
 			children = (
 				A2590EB226A1A022009B54AA /* AsgatechNewsTask */,
 				A2590EB126A1A022009B54AA /* Products */,
+				C815A33A2B1E63A6D6D3097B /* Pods */,
+				1A9430C7C30A9F0C0ADB4633 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = AsgatechNewsTask;
 			sourceTree = "<group>";
 		};
+		C815A33A2B1E63A6D6D3097B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38B7C035B36B376B27BACECD /* Pods-AsgatechNewsTask.debug.xcconfig */,
+				9E824A3EA46888C0C91D613D /* Pods-AsgatechNewsTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2590EC426A1A024009B54AA /* Build configuration list for PBXNativeTarget "AsgatechNewsTask" */;
 			buildPhases = (
+				9711906C73BE70066B4577AB /* [CP] Check Pods Manifest.lock */,
 				A2590EAC26A1A022009B54AA /* Sources */,
 				A2590EAD26A1A022009B54AA /* Frameworks */,
 				A2590EAE26A1A022009B54AA /* Resources */,
+				61EEF5A9573BE3FB6D82C7A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61EEF5A9573BE3FB6D82C7A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsgatechNewsTask/Pods-AsgatechNewsTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsgatechNewsTask/Pods-AsgatechNewsTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsgatechNewsTask/Pods-AsgatechNewsTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9711906C73BE70066B4577AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsgatechNewsTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2590EAC26A1A022009B54AA /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		A2590EC526A1A024009B54AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38B7C035B36B376B27BACECD /* Pods-AsgatechNewsTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		A2590EC626A1A024009B54AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E824A3EA46888C0C91D613D /* Pods-AsgatechNewsTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

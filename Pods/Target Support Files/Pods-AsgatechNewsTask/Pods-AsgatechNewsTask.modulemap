@@ -1,0 +1,6 @@
+framework module Pods_AsgatechNewsTask {
+  umbrella header "Pods-AsgatechNewsTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
