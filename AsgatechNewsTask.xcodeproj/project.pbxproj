@@ -21,6 +21,8 @@
 		A2590EE426A1BB17009B54AA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2590EE326A1BB17009B54AA /* NetworkManager.swift */; };
 		A2590EE826A1BB6C009B54AA /* NewsRemoteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2590EE726A1BB6C009B54AA /* NewsRemoteProtocol.swift */; };
 		A2590EEC26A1BBB7009B54AA /* NewsRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2590EEB26A1BBB7009B54AA /* NewsRemote.swift */; };
+		A2590EF326A1BE08009B54AA /* NewsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2590EF226A1BE08009B54AA /* NewsStoreProtocol.swift */; };
+		A2590EF726A1BF05009B54AA /* NewsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2590EF626A1BF05009B54AA /* NewsStore.swift */; };
 		BCAB4641638FD52705309C4C /* Pods_AsgatechNewsTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD46B40FF45050D883FA0C76 /* Pods_AsgatechNewsTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		A2590EE326A1BB17009B54AA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A2590EE726A1BB6C009B54AA /* NewsRemoteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRemoteProtocol.swift; sourceTree = "<group>"; };
 		A2590EEB26A1BBB7009B54AA /* NewsRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRemote.swift; sourceTree = "<group>"; };
+		A2590EF226A1BE08009B54AA /* NewsStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStoreProtocol.swift; sourceTree = "<group>"; };
+		A2590EF626A1BF05009B54AA /* NewsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStore.swift; sourceTree = "<group>"; };
 		BD46B40FF45050D883FA0C76 /* Pods_AsgatechNewsTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsgatechNewsTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,7 @@
 		A2590EB226A1A022009B54AA /* AsgatechNewsTask */ = {
 			isa = PBXGroup;
 			children = (
+				A2590EF026A1BD23009B54AA /* Core */,
 				A2590ED326A1B578009B54AA /* Network */,
 				A2590ECF26A1B4E4009B54AA /* Model */,
 				A2590EB326A1A022009B54AA /* AppDelegate.swift */,
@@ -152,6 +157,23 @@
 				A2590EEB26A1BBB7009B54AA /* NewsRemote.swift */,
 			);
 			path = Remote;
+			sourceTree = "<group>";
+		};
+		A2590EF026A1BD23009B54AA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A2590EF126A1BDBC009B54AA /* NewsStore */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A2590EF126A1BDBC009B54AA /* NewsStore */ = {
+			isa = PBXGroup;
+			children = (
+				A2590EF226A1BE08009B54AA /* NewsStoreProtocol.swift */,
+				A2590EF626A1BF05009B54AA /* NewsStore.swift */,
+			);
+			path = NewsStore;
 			sourceTree = "<group>";
 		};
 		C815A33A2B1E63A6D6D3097B /* Pods */ = {
@@ -280,6 +302,7 @@
 				A2590EE426A1BB17009B54AA /* NetworkManager.swift in Sources */,
 				A2590EDA26A1B643009B54AA /* NewsRequest.swift in Sources */,
 				A2590EE826A1BB6C009B54AA /* NewsRemoteProtocol.swift in Sources */,
+				A2590EF726A1BF05009B54AA /* NewsStore.swift in Sources */,
 				A2590EB826A1A022009B54AA /* ViewController.swift in Sources */,
 				A2590ED126A1B4FB009B54AA /* NewsResponse.swift in Sources */,
 				A2590ED726A1B5EA009B54AA /* EndPoint.swift in Sources */,
@@ -287,6 +310,7 @@
 				A2590EE126A1BA92009B54AA /* RemoteError.swift in Sources */,
 				A2590EEC26A1BBB7009B54AA /* NewsRemote.swift in Sources */,
 				A2590EDE26A1B98A009B54AA /* Schema.swift in Sources */,
+				A2590EF326A1BE08009B54AA /* NewsStoreProtocol.swift in Sources */,
 				A2590EB626A1A022009B54AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://newsapi.org/v2/";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsgatechNewsTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://newsapi.org/v2/";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AsgatechNewsTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
