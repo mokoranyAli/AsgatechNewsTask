@@ -12,25 +12,32 @@
 ## Overview
 
 Just a news app task to get news from API and show details 
+
 This is also include pagination
 
 ## Networking
 
 I applied it with moya, I made an end point has the requests
+
 And NetworkManager, this is generic layer for making request with Moya
+
 And Remote, this is for dealing with NetworkManager
 
 
 ## Architecture
 
 I made the task in MVVM architecture,
+
 I made layers with protocols to make it easier in case of we wanna add unit testing
+
 I used Subjects and closures callbacks for making binding
 
 ## Additional
 
 I made navigation with Coordinators
+
 I used StreatchyHeaderView in details screen
+
 I add used two dependencies : Moya and Kingfisher
 
 ## Video
