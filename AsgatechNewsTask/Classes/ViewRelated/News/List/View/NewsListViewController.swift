@@ -41,18 +41,6 @@ class NewsListViewController: ViewController {
   ///
   private let scrollWatcher = ScrollWatcher()
   
-  /// Time (In Seconds) that must elapse before a Page is considered "expired".
-  ///
-  let pageTTLInSeconds: TimeInterval = TimeInterval(3 * 60)
-  
-  /// Maps Page Numbers > Refresh Dates
-  ///
-  private var refreshDatePerPage = [Int: Date]()
-  
-  /// Indexes of the pages being currently Sync'ed
-  ///
-  private var pagesBeingSynced = IndexSet()
-  
   // MARK: - LifeCycle
   
   override func viewDidLoad() {
