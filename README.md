@@ -47,9 +47,7 @@ https://user-images.githubusercontent.com/45698820/126042205-c6bcdfd4-31e9-4882-
 
 ## ScreenShots
 
-![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 30 41](https://user-images.githubusercontent.com/45698820/126042119-3f2fc470-9eeb-48d0-9c4c-66eb6c7c76a8.png)
-![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 29 36](https://user-images.githubusercontent.com/45698820/126042120-44112764-b775-4b94-91fb-0e82c30cae56.png)
-![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 42 14](https://user-images.githubusercontent.com/45698820/126042122-99cb021b-a6b0-4a56-b8eb-26082c64dc5f.png)
+![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 30 41](https://user-images.githubusercontent.com/45698820/126042119-3f2fc470-9eeb-48d0-9c4c-66eb6c7c76a8.png) ![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 29 36](https://user-images.githubusercontent.com/45698820/126042120-44112764-b775-4b94-91fb-0e82c30cae56.png) ![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 42 14](https://user-images.githubusercontent.com/45698820/126042122-99cb021b-a6b0-4a56-b8eb-26082c64dc5f.png)
 ![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 29 46](https://user-images.githubusercontent.com/45698820/126042111-eb7da50c-1f51-4990-8b48-635532d6d234.png)
 ![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 30 21](https://user-images.githubusercontent.com/45698820/126042116-13506b68-e9cb-48aa-ac1c-4bcf688f0b5f.png)
 
