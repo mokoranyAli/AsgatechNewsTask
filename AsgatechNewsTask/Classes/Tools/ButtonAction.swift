@@ -12,17 +12,17 @@ import UIKit
 //
 class ButtonAction: NSObject {
   
-  /// Handler
+  /// Button Handler
   ///
   typealias Handler = ((ButtonAction) -> Void)
   
   // MARK: Properties
   
-  /// Title
+  /// Button Title
   ///
   let title: String?
   
-  /// Alert handler
+  /// Button Click  handler
   ///
   let handler: Handler?
   
@@ -46,7 +46,7 @@ class ButtonAction: NSObject {
   
   // MARK: - Handlers
   
-  /// Called when use taps the button
+  /// Called when user taps the button
   ///
   @objc private func didTapButton(_ sender: UIButton) {
     handler?(self)
