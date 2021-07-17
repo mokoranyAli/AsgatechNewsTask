@@ -4,6 +4,7 @@
 * [Networking]
 * [Architecture]
 * [Additional]
+* [Video]
 * [ScreenShots]
 
 ## Overview
@@ -30,8 +31,12 @@ I made navigation with Coordinators
 I used StreatchyHeaderView in details screen
 I add used two dependencies : Moya and Kingfisher
 
-## ScreenShots
+## Video
 
+https://user-images.githubusercontent.com/45698820/126042205-c6bcdfd4-31e9-4882-b692-4a5b0b0401c5.mov
+
+
+## ScreenShots
 
 ![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 30 41](https://user-images.githubusercontent.com/45698820/126042119-3f2fc470-9eeb-48d0-9c4c-66eb6c7c76a8.png)
 ![Simulator Screen Shot - iPhone SE (2nd generation) - 2021-07-17 at 16 29 36](https://user-images.githubusercontent.com/45698820/126042120-44112764-b775-4b94-91fb-0e82c30cae56.png)
