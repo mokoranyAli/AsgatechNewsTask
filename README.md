@@ -38,7 +38,7 @@ I made navigation with Coordinators
 
 I used StreatchyHeaderView in details screen
 
-I add used two dependencies : Moya and Kingfisher
+I add two dependencies : Moya and Kingfisher
 
 ## Video
 
