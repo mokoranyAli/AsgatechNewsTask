@@ -25,10 +25,6 @@ class NewsListViewModel: ViewModel {
   ///
   private let dataLoadingSubject = PublishSubject<Void>()
   
-  /// Indexes of the pages being currently Sync'ed
-  ///
-  private var pagesBeingSynced = IndexSet()
-  
   /// Articles
   ///
   private var value: [News] = []
@@ -43,6 +39,9 @@ class NewsListViewModel: ViewModel {
   ///
   private var shouldNavigateToDetails: ((News) -> Void)?
   
+  /// Used for pagination
+  /// SyncCoordinator: Keeps tracks of which pages have been refreshed, and encapsulates the "What should we sync now" logic.
+  ///
   private let syncingCoordinator = SyncingCoordinator()
   
   // MARK: - Init
@@ -50,17 +49,11 @@ class NewsListViewModel: ViewModel {
   init(store: NewsStoreProtocol = ServiceLocator.newsStore) {
     self.store = store
   }
-  
-  func load() {
-    loadNews()
-  }
-  
-  func hitPagination(lastVisibleIndex: Int) {
-    paginateIfPossible(with: lastVisibleIndex)
-  }
 }
 
 // MARK: - Data Providing
+//
+/// For give value to datasource, we don't need to have multiple lists
 ///
 extension NewsListViewModel: NewsListDataProvider {
   var list: [News] {
@@ -71,6 +64,14 @@ extension NewsListViewModel: NewsListDataProvider {
 // MARK: - Public Handlers
 //
 extension NewsListViewModel {
+  
+  func load() {
+    loadNews()
+  }
+  
+  func hitPagination(lastVisibleIndex: Int) {
+    paginateIfPossible(with: lastVisibleIndex)
+  }
   
   func configureOnShowToDetails(completion: @escaping (News) -> Void) {
     self.shouldNavigateToDetails = completion
